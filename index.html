@@ -30,6 +30,9 @@
                 <a href="#" class="navbar__link">Contact</a>
             </li>
         </ul>
+        <figure class="navbar__icone-hamburger">
+            <img src="medias/menu-hamburger.svg" alt="icon-hamburger">
+        </figure>
     </nav>
     <section class="section1">
         <div class="section1__calltoaction">
@@ -78,8 +81,10 @@
                     <img src="medias/img-myriam-devossni.png" alt="Photo Myriam Devossni">
                 </figure>
                 <div class="section2__entraineurpresentation">
-                    <h3 class="section2__entraineurname--h3">Myriam Devossni</h3>
-                    <h4 class="section2__entraineurname--h4">Lancer de javelot</h4>
+                    <div class="section2__entraineurpresentation--titre">
+                        <h3 class="section2__entraineurname--h3">Myriam Devossni</h3>
+                        <h4 class="section2__entraineurname--h4">Lancer de javelot</h4>
+                    </div>
                     <p class="section2__entraineurpresentation--p">Myriam Devossni est née le 10 juin 1995 dans une
                         petite ville en France. Elle a découvert le lancer de javelot à l'âgede 14 ans lors d'un camp
                         d'été d'athlétisme organisé par son école. Elle a immédiatement su qu'elle voulait
@@ -92,8 +97,10 @@
                     <img src="medias/img-eythan-durand.png" alt="Photo Eythan Durand">
                 </figure>
                 <div class="section2__entraineurpresentation">
-                    <h3 class="section2__entraineurname--h3">Eythan Durand</h3>
-                    <h4 class="section2__entraineurname--h4">Saut en longueur</h4>
+                    <div class="section2__entraineurpresentation--titre">
+                        <h3 class="section2__entraineurname--h3">Eythan Durand</h3>
+                        <h4 class="section2__entraineurname--h4">Saut en longueur</h4>
+                    </div>
                     <p class="section2__entraineurpresentation--p">Eythan Durand est un athlète talentueux et déterminé,
                         champion ensaut en longueur. Avec des sauts record atteignant les 8m50, il a établi son nom
                         comme l'un des meilleurs sauteurs de sa génération. Sa passion pour le sport l'apoussé à
@@ -105,8 +112,10 @@
                     <img src="medias/img-adam-smith.png" alt="Photo Adam Smith">
                 </figure>
                 <div class="section2__entraineurpresentation">
-                    <h3 class="section2__entraineurname--h3">Adam Smith</h3>
-                    <h4 class="section2__entraineurname--h4">Sprint</h4>
+                    <div class="section2__entraineurpresentation--titre">
+                        <h3 class="section2__entraineurname--h3">Adam Smith</h3>
+                        <h4 class="section2__entraineurname--h4">Sprint</h4>
+                    </div>
                     <p class="section2__entraineurpresentation--p">Adam Smith est un sprinter accompli et respecté dans
                         le monde de l'athlétisme. Avec des temps de course record de moinsde 10 secondes sur 100m, il a
                         gagné de nombreux titres nationaux et internationaux. Sa détermination, son éthique detravail
@@ -218,47 +227,48 @@
 </body>
 <footer>
     <section class="footer__col1">
-        <figure class="footer__col1--logo">
+        <figure>
             <img src="medias/logo-club-de-bordeaux.svg" alt="logo-club-de-bordeaux">
         </figure>
-        <h3>Prêts à rejoindre le club ?</h3>
+        <nav class="footer__col1--socialicon">
+            <ul class="footer__col1--socialicon-row">
+                <li class="footer__col1--socialicon-row-item">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="medias/logo-facebook.svg"  alt="Facebook">
+                </li>
+                <li class="footer__col1--socialicon-row-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="medias/logo-instagram.svg"  alt="Instagram">
+                </li>
+            </ul>
+        </nav>
     </section>
     <section class="footer__col2">
         <nav class="footer__col2-navbar">
             <ul class="footer__col2--links">
                 <li class="footer__col2--link-item">
-                    <a href="#" class="footer__col2--link">Accueil</a>
+                    <a href="#" class="footer__col3--link">Accueil</a>
                 </li>
                 <li class="footer__col2--link-item">
-                    <a href="#" class="footer__col2--link">Présentation</a>
+                    <a href="#" class="footer__col3--link">Présentation</a>
                 </li>
                 <li class="footer__col2--link-item">
-                    <a href="#" class="footer__col2--link">Formules</a>
+                    <a href="#" class="footer__col3--link">Formules</a>
                 </li>
                 <li class="footer__col2--link-item">
-                    <a href="#" class="footer__col2--link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="footer__col2--socialicon">
-            <ul class="footer__col2--socialicon-row">
-                <li class="footer__col2--socialicon-row-item">
-                    <img src="medias/logo-facebook.svg" href="#" target="_blank" alt="Facebook">
-                </li>
-                <li class="footer__col2--socialicon-row-item">
-                    <img src="medias/logo-instagram.svg" href="#" target="_blank" alt="Instagram">
+                    <a href="#" class="footer__col3--link">Contact</a>
                 </li>
             </ul>
         </nav>
     </section>
     <section class="footer__col3">
+        <h3>Prêts à rejoindre le club ?</h3>
         <ul class="footer__col3--infos">
             <li class="footer__col3--infos-location-icon">12 rue trivierre, Bordeaux</li>
             <li class="footer__col3--infos-enveloppe-icon">contact@clubdebordeaux.com</li>
             <li class="footer__col3--infos-phone-icon">07 54 76 87 98</li>
         </ul>
     </section>
-    <p class="footer__copyright">© 2023 Lamanufactureduweb All rights reserved.</p>
+    <p id="footer__copyright" class="footer__copyright">© 2023 Lamanufactureduweb All rights reserved.</p>
 </footer>
-
+</body>
+<script src="js/app.js"></script>
 </html>
