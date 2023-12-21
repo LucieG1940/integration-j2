@@ -1,12 +1,8 @@
-const hamburger = document.querySelector(".hamburger")
-const nav_menu = document.querySelector(".nav-menu")
+const hamburger = document.querySelector("#navbar__icone-hamburger");
+const navbar__links = document.querySelector("#navbar__links");
+console.log(hamburger);
+console.log(navbar__links);
 
-hamburger.addEventListener("click",()=>{
-  hamburger.classList.toggle("active");
-  nav_menu.classList.toggle("active");
+hamburger.addEventListener("click", function(){
+  navbar__links.classList.toggle("displayBlock");
 })
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  nav_menu.classList.remove("active");
-}))
